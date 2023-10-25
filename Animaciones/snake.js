@@ -72,8 +72,7 @@ setInterval(()=>{
         newitem.x=comida.x
         newitem.y=comida.y
         snake.push({...newitem})
-        snake.push({...newitem})
-        snake.push({...newitem})
+       
 
         comida.aparece();
         total++;
@@ -99,7 +98,7 @@ setInterval(()=>{
     if (posy > 20) posy = 1;
     if (posy < 1) posy = 20;
 
-},20)
+},100)
 
 body.addEventListener('keydown', (e) => {
     switch (e.key) {

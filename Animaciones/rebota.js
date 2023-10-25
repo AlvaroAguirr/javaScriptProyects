@@ -15,12 +15,12 @@ ctx.fill();
 //ctx.stroke();
 }
 
-let directionX=1;
-let directionY=1;
+let directionX=0;
+let directionY=0;
 
 function cuadro(x,y){
-    ctx.fillStyle=`hsl(${Color},50%,50% )`;
-    Color+=0.05;
+    ctx.fillStyle=`hsl(${Color},60%,50% )`;
+    Color+=1;
     ctx.fillRect(x,y,30,30)
 }
 
@@ -42,8 +42,8 @@ setInterval(()=>{
         idX-=5;
         idY-=5;
     }
-    if(idX>750)directionX=2;
+    if(idX>650)directionX=2;
     if(idX<10)directionX=1;
-    if(idY>500)directionY=2;
+    if(idY>400)directionY=2;
     if(idY<10)directionY=1;
-},10);
+},5);
